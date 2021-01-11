@@ -1,0 +1,40 @@
+.chats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chats {
+  height: 60vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  width: 60%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.chats::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.chats::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+@media only screen and (max-width: 800px) {
+  .chats {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .chats {
+    height: 60vh;
+    margin: 10vh 0 3vh;
+  }
+}

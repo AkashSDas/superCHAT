@@ -1,0 +1,50 @@
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+
+  background: var(--secondary);
+  height: 3.6rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  padding: 0.4rem;
+
+  input {
+    background: none;
+    border: none;
+    width: 90%;
+    height: 3.6rem;
+    outline: none;
+    color: white;
+    font-family: var(--font-body);
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--blue);
+    font-size: 1.4rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-container .form {
+    width: 90%;
+  }
+}

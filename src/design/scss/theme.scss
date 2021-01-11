@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --card-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  --font-head: "Montserrat";
+  --font-body: "Montserrat";
+  --font-msg: "Nunito";
+  --primary: #23272a;
+  --secondary: #2c2f33;
+  --blue: #0097c7;
+  --light-blue: #0085ff;
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+  padding-bottom: 5rem;
+  background: var(--primary);
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
